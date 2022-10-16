@@ -1,0 +1,40 @@
+<button mat-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>menu</mat-icon>
+  <span>Menu</span>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <span><a (click)="goToAboutUs()">About Us</a></span>
+  </button>
+  <button mat-menu-item>
+    <span><a (click)="goToBruceMcCord()">Bruce McCord</a></span>
+  </button>
+  <button mat-menu-item>
+    <span><a (click)="goToPeople()">People</a></span>
+  </button>
+
+  <button mat-menu-item>
+    <span><a (click)="goToCollaborations()">Collaborations</a></span>
+  </button>
+  <button mat-menu-item>
+    <span><a (click)="goToResearch()">Research</a></span>
+  </button>
+  <button mat-menu-item>
+    <span><a (click)="goToPublications()">Publications</a></span>
+  </button>
+  <button mat-menu-item ngClick="goToTestimonials()">
+    <span>Testimonials</span>
+  </button>
+
+
+  <button mat-menu-item ngClick="goToMedia()">
+    <span>Media</span>
+  </button>
+  <button mat-menu-item ngClick="goToUpdates()">
+    <span>Updates</span>
+  </button>
+  <button mat-menu-item ngClick="goToLinks()">
+    <span>Links</span>
+    <!-- <span><a (click)="goToLinks()">Links</a></span> -->
+  </button>
+</mat-menu>
